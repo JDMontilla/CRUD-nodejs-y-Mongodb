@@ -11,7 +11,7 @@ conectarBD();
 app.use(cors());
 
 app.use(express.json());
-app.use('/api/clientes', require ('../routes/rutas'));
+app.use('/api/clientes', require('../routes/rutas'));
 
 
 

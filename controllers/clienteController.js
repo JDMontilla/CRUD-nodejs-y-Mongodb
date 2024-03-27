@@ -20,7 +20,8 @@ exports.agregarClientes = async(req, res) => {
     try {
 
      let clientes;
-     clientes = new Cliente(req.body)  
+     clientes = new Cliente(req.body)
+     console.log(req)  
      await clientes.save();
      res.send(clientes); 
         
