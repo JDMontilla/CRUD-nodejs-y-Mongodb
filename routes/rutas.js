@@ -6,5 +6,6 @@ const clienteController = require('../controllers/clienteController');
 
 router.post('/', clienteController.agregarClientes);
 router.get('/', clienteController.buscarClientes);
+router.get('/:id', clienteController.buscarCliente);
 
 module.exports = router;
