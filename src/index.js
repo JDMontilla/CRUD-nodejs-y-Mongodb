@@ -21,6 +21,9 @@ app.get('/',(req,res)=>{
     res.send('Hola Mundo desde la web');
 })
 
+// se define una constante para el puerto que tendra configuracion local o en la nube del puerto
+const port = process.env.port || 3000;
+
 app.listen(3000,() =>{
     console.log('El servidor esta conectado http://localhost:3000/');
 })
